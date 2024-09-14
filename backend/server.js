@@ -16,7 +16,7 @@ app.use(cors());
 //imageprocessor-rera.onrender.com/
 app.use(
   cors({
-    origin: "http://imageprocessor-rera.onrender.com",
+    origin: "https://imageprocessor-rera.onrender.com/",
   })
 );
 
