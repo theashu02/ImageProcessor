@@ -1,7 +1,7 @@
 import React from 'react';
-import UploadImage from './assets/UploadImage';
-import ImageManipulation from './assets/ImageManipulation';
-import DownloadImage from './assets/DownloadImage';
+import UploadImage from './components/UploadImage';
+import ImageManipulation from './components/ImageManipulation';
+import DownloadImage from './components/DownloadImage';
 import { ImageProvider } from './context/ImageContext';
 
 const App: React.FC = () => {
