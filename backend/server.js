@@ -12,7 +12,15 @@ const PORT = 5000;
 
 // Middleware
 app.use(cors());
-app.use(bodyParser.json({ limit: '50mb' })); // Increase the limit as needed
+// for deployment
+//imageprocessor-rera.onrender.com/
+app.use(
+  cors({
+    origin: "http://imageprocessor-rera.onrender.com",
+  })
+);
+
+https: app.use(bodyParser.json({ limit: "50mb" })); // Increase the limit as needed
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' })); // Increase the limit as needed
 
 
